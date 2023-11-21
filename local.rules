@@ -1,0 +1,19 @@
+# $Id: local.rules,v 1.11 2004/07/23 20:15:44 bmc Exp $
+# ----------------
+# LOCAL RULES
+# ----------------
+# This file intentionally does not come with signatures.  Put your local
+# additions here.
+
+# Rule for detecting ping signals
+
+alert icmp any any -> $HOME_NET any (msg:"Ping Detected!"; sid:100001; rev:1;)
+
+# Rule for detecting high traffic (simulating ddos attack)
+
+alert tcp any any -> $HOME_NET 80 (msg:"Possible DDoS Attack Detected"; sid:1000005;)
+
+# Rule for detecting port scanning 
+
+alert tcp any any -> 192.168.1.100 any (msg:"Possible Port Scan Detected"; flags:S; threshold:type both, track by_src, count 15, seconds 60; sid:1000002;)
+
