@@ -2,7 +2,7 @@
 
 echo 'Updating Ubuntu'
 
-apt update
+apt update && apt upgrade -y
 
 echo 'Ubuntu update complete'
 
@@ -25,3 +25,10 @@ apt install -y nmap
 nmap --version
 
 echo 'Installation of Nmap complete'
+
+echo 'Attempting to install Fping'
+
+apt install fping
+
+echo 'Installation of Fping complete'
+
