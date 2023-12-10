@@ -11,3 +11,11 @@ echo 'Attempting to install Snort'
 apt install snort
 
 echo 'Installation of Snort complete'
+
+echo 'Attempting to install Nmap'
+
+apt install -y nmap
+
+nmap --version
+
+echo 'Installation of Nmap complete'
