@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo 'Updating Ubuntu'
+
+apt update
+
+echo 'Ubuntu update complete'
+
 echo 'Attempting to install Wireshark'
 
 apt install wireshark
