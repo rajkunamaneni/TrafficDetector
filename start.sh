@@ -8,13 +8,13 @@ echo 'Ubuntu update complete'
 
 echo 'Attempting to install Wireshark'
 
-apt install wireshark
+apt install -y wireshark
 
 echo 'Installation of Wireshark complete'
 
 echo 'Attempting to install Snort'
 
-apt install snort
+apt install -y snort
 
 echo 'Installation of Snort complete'
 
@@ -28,7 +28,9 @@ echo 'Installation of Nmap complete'
 
 echo 'Attempting to install Fping'
 
-apt install fping
+apt install -y fping
 
 echo 'Installation of Fping complete'
+
+echo 'Full Installation of TrafficDetector complete!'
 
