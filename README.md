@@ -15,3 +15,14 @@ git clone https://github.com/rajkunamaneni/TrafficDetector.git
 ```
 ### Future Directions:
 
+A bash script (start.sh) has been provided to enable the installation of various programs and tools used to log information that is processed by the open-source security toolkit.
+
+Run the bash script as follows:
+
+```bash
+chmod +x start.sh
+./start.sh
+```
+
+The programs should install without interference and minimal user input.
+
