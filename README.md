@@ -46,11 +46,13 @@ sudo nano /etc/snort/snort.conf
 ```
 
 Set the HOME_NET variable to your local network. For example, if your local network is 192.168.1.0/24, you would change the line to:
+
 ```bash
 ipvar HOME_NET 192.168.1.0/24
+```
 
 Save and close the file.
-```
+
 
 To run Snort in console mode and see the network traffic:
 
