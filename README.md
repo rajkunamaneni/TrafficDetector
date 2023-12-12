@@ -44,6 +44,14 @@ Access to AWS hosting is also needed. In the future, there is potential to expan
 
 ## Future Directions:
 
+Additional Tools: Looking into integrating other security tools to complement the current library.
+
+Optimization for Raspberry Pi: Focusing on performance and resource efficiency for specifically Raspberry Pi devices.
+
+User Experience Enhancement: Developing a simple, intuitive interface with clear notifications for security incidents as well as improving the UI for AWS notifications.
+
+Data Presentation: Improvements to the AWS messaging format with a more user-friendly design, while still providing easy to integral information about the security of the network.
+
 ## Configurability:
 
 As an open source toolkit, the start.sh shell script was designed to be easily configurable. To implement new programs and utilities into the toolkit to optimize security coverage, one needs to only insert lines indicating tools to be installed. This enables simplicity with little overhead in terms of mental effort.
