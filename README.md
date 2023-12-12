@@ -84,6 +84,8 @@ sudo tshark -i eth0 -w ~/capture.pcap
 ```
 Replace eth0 with your network interface and specify your desired output file.
 
+![Tshark Demo](/extras/TsharkDemo.png)
+
 ### `Nmap`
 
 Nmap is a free and open-source utility for network discovery and security auditing. It can be used to scan networks for open ports, detect operating systems, and find vulnerabilities. 
@@ -116,6 +118,16 @@ nmap -T4 google.com
  
 This will speed up the scan and display the results faster. The -T4 flag can be used with any scan.
 
+Using -vv with sudo permissions in Nmap will display more information about the scan. For example:
+
+```bash
+nmap -vv google.com
+```
+
+This will display more information about the scan, such as the number of packets sent and received. The -vv flag can be used with any scan.
+
+![NMap Demo](/extras/NMapDemo.png)
+
 ### `FPing`
 
 FPing is a free and open-source utility for network discovery and security auditing. It is faster than `ping` because it sends multiple ICMP packets at once. It can be used to scan networks for open ports, detect operating systems, and find vulnerabilities. 
@@ -139,6 +151,12 @@ fping google.com
 ```
 
 This procedure will ping the target and display the results. The [target] can also be an IP address. The output of FPing is much simpler than `ping` because it whether or not the target is reachable. It does not display the round trip time or the number of packets sent and received.
+
+Here is how the outputs of `ping` and FPing compare:
+
+![FPing Demo](/extras/FPingDemo.png)
+
+Fping provides less information thatn ping, but it is faster because it sends multiple ICMP packets at once. 
 
 ## 📌 Note:
 
@@ -170,6 +188,12 @@ Memory (RAM): 4GB DDR4 RAM recommended (DDR3 also valid)
 Storage: An 8 GB SD card should suffice, the bigger the better as the tool grows over time.
 
 Access to AWS hosting is also needed. In the future, there is potential to expand to other well-known hosting platforms (i.e. DigitalOcean, Cloudflare, etc.).
+
+## AWS Notifications and Usage
+
+# TO BE DONE
+
+![AWS Diagram](/extras/AWSSnortDiagram.png)
 
 ## Current Progress:
 
