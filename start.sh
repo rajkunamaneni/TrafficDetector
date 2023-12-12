@@ -18,8 +18,6 @@ apt install -y tshark
 
 apt install -y rpm
 
-apt install -y ifconfig
-
 echo 'Installation of Wireshark Dependencies complete'
 
 echo 'Attempting to install Snort'
