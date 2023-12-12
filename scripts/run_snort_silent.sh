@@ -4,5 +4,5 @@
 echo "Starting Snort"
 
 # Start Snort in background
-sudo snort -q -l /var/log/snort -i wlan0 -A console -c /etc/snort/snort.conf &
+sudo snort -q -l /var/log/snort -i wlan0 -A console -c /etc/snort/snort.conf > /home/ubuntu/scripts/snort_output.log
 
