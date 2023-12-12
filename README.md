@@ -19,14 +19,107 @@ Anti-virus software, though effective against viruses, can significantly slow do
 git clone https://github.com/rajkunamaneni/TrafficDetector.git
 ```
 
-### 2) Open the Terminal and run the bash script as follows:
+### 2) Open the Terminal and run the `start.sh` bash script. This bash script has been provided to enable the installation of various programs and tools used to log information that is processed by the open-source security toolkit. Sudo permissions are required to run the script. The script will prompt the user to enter their password to proceed with the installation. 
+
 ```bash
 chmod +x start.sh
 ./start.sh
 ```
-This bash script (start.sh) has been provided to enable the installation of various programs and tools used to log information that is processed by the open-source security toolkit.
 
 ## :zap: How to run 
+
+### Snort
+
+Snort is an open-source network intrusion prevention system and intrusion detection system. It's capable of performing real-time traffic analysis and packet logging on IP networks.
+
+
+Snort should already be installed if you have run the `start.sh` script. If not, you can install it manually using the following command:
+
+```bash
+sudo apt-get install snort
+```
+
+Configure Snort for your network. Edit the Snort configuration file:
+
+```bash
+sudo nano /etc/snort/snort.conf
+```
+
+Set the HOME_NET variable to your local network. For example, if your local network is 192.168.1.0/24, you would change the line to:
+```bash
+ipvar HOME_NET 192.168.1.0/24
+
+Save and close the file.
+```
+
+To run Snort in console mode and see the network traffic:
+
+```bash
+sudo snort -A console -q -c /etc/snort/snort.conf -i eth0
+```
+
+Replace eth0 with your network interface name.
+
+### Wireshark
+
+Wireshark is a network protocol analyzer that can capture and display the data traveling back and forth on a network.
+
+Wireshark is included in the ```start.sh``` script. To install it manually:
+
+```bash
+sudo apt-get install wireshark
+```
+
+Tshark is a command-line version of Wireshark. It can be used to capture packets and save them to a file. It can also be used to read packets from a file and display them on the screen. Tshark is included in the ```start.sh``` script. To install it manually:
+
+```bash
+sudo apt-get install tshark
+```
+
+To capture packets using Wireshark:
+
+```bash
+sudo tshark -i eth0 -w ~/capture.pcap
+```
+Replace eth0 with your network interface and specify your desired output file.
+
+### Nmap
+
+Nmap is a free and open-source utility for network discovery and security auditing. It can be used to scan networks for open ports, detect operating systems, and find vulnerabilities. 
+
+Nmap should be installed with the ```start.sh``` script. To install it manually:
+
+```bash
+sudo apt-get install nmap
+```
+
+Scanning a network using NMap allows you to find open ports and detect operating systems. This is useful for finding vulnerabilities in your network. It can also be used to find the IP address of a host on your network. For security of your network, you can use NMap to scan for open ports and close them if necessary. 
+
+To scan a network or a host:
+
+```bash
+nmap [target]
+```
+
+Replace [target] with the IP address or hostname of your target. For example:
+
+```bash
+nmap 192.168.1.1
+```
+
+This procedure will scan the network and display the open ports and operating system of the target. The [target] can also be a hostname, such as google.com. Scanning a network or host can take a long time, so it is recommended to use the -T4 flag to speed up the scan. The flag -T4 will set the timing template to aggressive, in other words it will speed up the scan. For example using -T4 on google.com:
+
+```bash
+nmap -T4 google.com
+```
+ 
+This will speed up the scan and display the results faster. The -T4 flag can be used with any scan.
+
+📌 Note:
+
+    Ensure you have the necessary permissions and are compliant with legal regulations when using these tools.
+    Regularly update the tools to get the latest security features and bug fixes.
+    For detailed usage and advanced configurations, consult the respective man pages or online documentation.
 
 ## Hardware and Other Prerequisites:
 
