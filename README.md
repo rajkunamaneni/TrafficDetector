@@ -126,7 +126,7 @@ nmap -vv google.com
 
 This will display more information about the scan, such as the number of packets sent and received. The -vv flag can be used with any scan.
 
-![NMap Demo](/extras/NMapDemo.png)
+![NMap Demo](/extras/NmapDemo.png)
 
 ### `FPing`
 
@@ -154,7 +154,7 @@ This procedure will ping the target and display the results. The [target] can al
 
 Here is how the outputs of `ping` and FPing compare:
 
-![FPing Demo](/extras/FPingDemo.png)
+![FPing Demo](/extras/FpingDemo.png)
 
 Fping provides less information thatn ping, but it is faster because it sends multiple ICMP packets at once. 
 
