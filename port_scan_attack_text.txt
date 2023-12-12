@@ -1,0 +1,22 @@
+A Port Scan Attack has been detected by SNORT.
+
+SNORT will work on solving this issue. 
+
+A Port Scan Attack involves systematically scanning a computer's ports. Since a port is a point of entry into a server or network, this type of attack is often used by attackers to find weaknesses in a system's defenses. It's one of the preliminary stages of an attack, allowing the attacker to map out what services are running and possibly vulnerable.
+
+To mitigate a Port Scan Attack, consider the following steps:
+
+1. Use a Firewall: Configuring a firewall to block unwanted traffic can prevent unauthorized access through open ports.
+
+2. Regularly Update and Patch Systems: Keeping systems updated helps close off security vulnerabilities that attackers could exploit.
+
+3. Monitor Network Traffic: Keeping an eye on your network traffic can help you identify unusual patterns or spikes that might indicate a scanning attempt.
+
+4. Employ Intrusion Detection Systems (IDS): These systems can detect unusual network traffic and alert you to potential scanning activities.
+
+5. Limit Responses to Unknown Hosts: Configure your systems to limit the amount of information they reveal in response to unsolicited network requests.
+
+Promptly addressing these vulnerabilities can significantly reduce the risk of a successful cyber attack.
+
+Best regards,
+SNORT IDS Team
