@@ -4,10 +4,10 @@
 ## Introduction:
 In the age of pervasive computer security threats, safeguarding networks against eavesdropping and snooping attacks is more crucial than ever. This repository aims to address the challenges faced by non-tech-savvy individuals who struggle to comprehend and employ traditional open-source network security tools. Our goal is to create an extensible network toolkit directory that is accessible to all users, providing a lightweight yet effective solution for detecting and mitigating eavesdropping attacks. The toolkit was developed to run on Raspberry Pi Version 3B+ and later models, as well as any Debian-based machine with equivalent or better hardware.
 
-## Challenges in Eavesdropping Attacks:
+### Challenges in Eavesdropping Attacks:
 Eavesdropping attacks can vary in form, including snooping and man-in-the-middle attacks. These attacks are becoming more sophisticated over time, often outpacing the defensive capabilities of traditional network security tools. We propose a lightweight solution that can effectively mitigate such attacks with easy-to-understand notifications for users.
 
-## Problem with Anti-Virus Software and Our Solution:
+### Problem with Anti-Virus Software and Our Solution:
 Anti-virus software, though effective against viruses, can significantly slow down system performance when running network scans. Our solution involves shifting this workload to a dedicated network machine, like a Raspberry Pi, acting as a DNS server to monitor network traffic and alert users of any unauthorized data transfers.
 
 ## :wrench: Installation
