@@ -30,7 +30,7 @@ chmod +x start.sh
 
 ### Snort
 
-Snort is an open-source network intrusion prevention system and intrusion detection system. It's capable of performing real-time traffic analysis and packet logging on IP networks.
+Snort is an open-source network intrusion prevention system and intrusion detection system. It's capable of performing real-time traffic analysis and packet logging on IP networks. Snort is used to detect and prevent attacks such as buffer overflows, stealth port scans, CGI attacks, SMB probes, and OS fingerprinting attempts. Snort can be used to monitor network traffic and detect suspicious activity. 
 
 
 Snort should already be installed if you have run the `start.sh` script. If not, you can install it manually using the following command:
@@ -53,7 +53,6 @@ ipvar HOME_NET 192.168.1.0/24
 
 Save and close the file.
 
-
 To run Snort in console mode and see the network traffic:
 
 ```bash
@@ -64,7 +63,7 @@ Replace eth0 with your network interface name.
 
 ### Wireshark
 
-Wireshark is a network protocol analyzer that can capture and display the data traveling back and forth on a network.
+Wireshark is a network protocol analyzer that can capture and display the data traveling back and forth on a network. It is used to troubleshoot network problems, analyze network traffic, and detect network intrusions. In regards to the toolkit's functionality, Wireshark can be used to capture packets and analyze them for suspicious activity. The command line version of Wireshark, Tshark, can be used to capture packets and save them to a file
 
 Wireshark is included in the ```start.sh``` script. To install it manually:
 
@@ -122,6 +121,7 @@ This will speed up the scan and display the results faster. The -T4 flag can be 
     Ensure you have the necessary permissions and are compliant with legal regulations when using these tools.
     Regularly update the tools to get the latest security features and bug fixes.
     For detailed usage and advanced configurations, consult the respective man pages or online documentation.
+# ADD LINKS HERE!!!
 
 ## Hardware and Other Prerequisites:
 
