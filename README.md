@@ -116,12 +116,44 @@ nmap -T4 google.com
  
 This will speed up the scan and display the results faster. The -T4 flag can be used with any scan.
 
-📌 Note:
+### FPing
 
-    Ensure you have the necessary permissions and are compliant with legal regulations when using these tools.
-    Regularly update the tools to get the latest security features and bug fixes.
-    For detailed usage and advanced configurations, consult the respective man pages or online documentation.
-# ADD LINKS HERE!!!
+FPing is a free and open-source utility for network discovery and security auditing. It is faster than `ping` because it sends multiple ICMP packets at once. It can be used to scan networks for open ports, detect operating systems, and find vulnerabilities. 
+
+FPing should be installed with the ```start.sh``` script. To install it manually:
+
+```bash
+sudo apt-get install fping
+```
+
+To run FPing:
+
+```bash
+fping [target]
+```
+
+Replace [target] with the IP address or hostname of your target. For example:
+
+```bash
+fping google.com
+```
+
+This procedure will ping the target and display the results. The [target] can also be an IP address. The output of FPing is much simpler than `ping` because it whether or not the target is reachable. It does not display the round trip time or the number of packets sent and received.
+
+## 📌 Note:
+
+Ensure you have the necessary permissions and are compliant with legal regulations when using these tools.
+Regularly update the tools to get the latest security features and bug fixes.
+
+For detailed usage and advanced configurations, consult the respective man pages or online documentation:
+
+[Tshark](https://www.wireshark.org/docs/man-pages/tshark.html)
+
+[Snort](https://www.snort.org/documents)
+
+[NMap](https://nmap.org/docs.html)
+
+[FPing](https://fping.org/) 
 
 ## Hardware and Other Prerequisites:
 
