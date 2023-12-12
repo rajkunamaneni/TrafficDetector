@@ -17,8 +17,8 @@ chmod +x start.sh
 ./start.sh
 ```
 This bash script (start.sh) has been provided to enable the installation of various programs and tools used to log information that is processed by the open-source security toolkit.
-### 3) Add more
 
+## :zap: How to run 
 
 ## Hardware and Other Prerequisites:
 
