@@ -1,7 +1,7 @@
 # Traffic Detector for Network Intrusion
 **Authors: Georgy Zaets, Raj Kunamaneni, Guneet Mummaneni, Jared Pugh**
 
-![TrafficDetector Logo](extras\TrafficDetectorLogo.png)
+![TrafficDetector Logo](/extras/TrafficDetectorLogo.png)
 
 ## Introduction:
 In the age of pervasive computer security threats, safeguarding networks against eavesdropping and snooping attacks is more crucial than ever. This repository aims to address the challenges faced by non-tech-savvy individuals who struggle to comprehend and employ traditional open-source network security tools. Our goal is to create an extensible network toolkit directory that is accessible to all users, providing a lightweight yet effective solution for detecting and mitigating eavesdropping attacks. The toolkit was developed to run on Raspberry Pi Version 3B+ and later models, as well as any Debian-based machine with equivalent or better hardware.
