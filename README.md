@@ -44,4 +44,10 @@ Access to AWS hosting is also needed. In the future, there is potential to expan
 
 ## Future Directions:
 
+## Configurability:
 
+As an open source toolkit, the start.sh shell script was designed to be easily configurable. To implement new programs and utilities into the toolkit to optimize security coverage, one needs to only insert lines indicating tools to be installed. This enables simplicity with little overhead in terms of mental effort.
+
+Users can customize the shell script to provide more information regarding the status of the installation process. Flags to suppress information and prompts can be disabled if the user desires.
+
+For more information, users can check man pages for Unix-based systems to learn the fine details of all commands.
