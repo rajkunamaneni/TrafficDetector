@@ -28,7 +28,7 @@ chmod +x start.sh
 
 ## :zap: How to run 
 
-### Snort
+### `Snort`
 
 Snort is an open-source network intrusion prevention system and intrusion detection system. It's capable of performing real-time traffic analysis and packet logging on IP networks. Snort is used to detect and prevent attacks such as buffer overflows, stealth port scans, CGI attacks, SMB probes, and OS fingerprinting attempts. Snort can be used to monitor network traffic and detect suspicious activity. 
 
@@ -61,7 +61,7 @@ sudo snort -A console -q -c /etc/snort/snort.conf -i eth0
 
 Replace eth0 with your network interface name.
 
-### Wireshark
+### `Wireshark`
 
 Wireshark is a network protocol analyzer that can capture and display the data traveling back and forth on a network. It is used to troubleshoot network problems, analyze network traffic, and detect network intrusions. In regards to the toolkit's functionality, Wireshark can be used to capture packets and analyze them for suspicious activity. The command line version of Wireshark, Tshark, can be used to capture packets and save them to a file
 
@@ -84,7 +84,7 @@ sudo tshark -i eth0 -w ~/capture.pcap
 ```
 Replace eth0 with your network interface and specify your desired output file.
 
-### Nmap
+### `Nmap`
 
 Nmap is a free and open-source utility for network discovery and security auditing. It can be used to scan networks for open ports, detect operating systems, and find vulnerabilities. 
 
@@ -116,7 +116,7 @@ nmap -T4 google.com
  
 This will speed up the scan and display the results faster. The -T4 flag can be used with any scan.
 
-### FPing
+### `FPing`
 
 FPing is a free and open-source utility for network discovery and security auditing. It is faster than `ping` because it sends multiple ICMP packets at once. It can be used to scan networks for open ports, detect operating systems, and find vulnerabilities. 
 
