@@ -1,0 +1,22 @@
+A DDoS (Distributed Denial of Service) attack has been detected by SNORT. 
+
+SNORT will work on solving this issue. 
+
+A DDoS attack is a malicious attempt to disrupt the normal traffic of a targeted server, service, or network by overwhelming the target or its surrounding infrastructure with a flood of Internet traffic. This is achieved by using multiple compromised computer systems as sources of attack traffic. 
+
+To mitigate a DDoS attack, consider the following steps:
+
+1. Increase Bandwidth: Having more bandwidth than you typically need can help absorb the excess traffic.
+
+2. Use DDoS Mitigation Tools: Employ tools or services that can recognize and filter out malicious traffic.
+
+3. Distribute Your Network Resources: Spreading your resources across multiple data centers can help absorb and mitigate attack impact.
+
+4. Create a Response Plan: Having a pre-defined action plan allows you to respond quickly to an attack.
+
+5. Cooperate with Your ISP: Your Internet Service Provider might be able to offer assistance during an attack.
+
+Remember, the key to effectively combating a DDoS attack is preparation and immediate action.
+
+Best regards,
+SNORT IDS Team
