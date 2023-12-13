@@ -239,7 +239,7 @@ Better Hardware Support: Expanding to support other hardware platforms like RISC
 
 Reducing User Effort: Automating the installation process to reduce the amount of manual work required.
 
-## 🔧 Configurability:
+## 🛠️ Configurability:
 
 As an open source toolkit, the start.sh shell script was designed to be easily configurable. To implement new programs and utilities into the toolkit to optimize security coverage, one needs to only insert lines indicating tools to be installed. This enables simplicity with little overhead in terms of mental effort.
 
