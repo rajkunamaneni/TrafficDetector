@@ -89,7 +89,7 @@ To run Snort in packet logging mode and save the packets to a file:
 sudo snort -A console -q -c /etc/snort/snort.conf -i eth0 -l ~/snortlog
 ```
 
-The flags -A console -q -c /etc/snort/snort.conf -i eth0 are required to run Snort in packet logging mode. The -l flag specifies the directory to save the packets to. The directory must exist before running Snort. The directory will be created if it does not exist. -A flag specifies the output mode. -q flag specifies quiet mode. -c flag specifies the configuration file. /etc/snort/snort.conf is the default configuration file. -i flag specifies the network interface. eth0 is the default network interface.
+The flags `-A console -q -c /etc/snort/snort.conf -i eth0` are required to run Snort in packet logging mode. The -l flag specifies the directory to save the packets to. The directory must exist before running Snort. The directory will be created if it does not exist. -A flag specifies the output mode. -q flag specifies quiet mode. -c flag specifies the configuration file. /etc/snort/snort.conf is the default configuration file. -i flag specifies the network interface. eth0 is the default network interface.
 
 This will save the packets to the snortlog directory in your home directory. Make sure to use the correct file path for your system. 
 
