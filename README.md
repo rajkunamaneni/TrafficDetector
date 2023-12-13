@@ -214,6 +214,8 @@ For detailed usage and advanced configurations, consult the respective man pages
 
 [FPing](https://fping.org/) 
 
+[AWS](https://aws.amazon.com/)
+
 ## 💻 Hardware and Other Prerequisites:
 
 Raspberry Pi Requirements: A Raspberry Pi (version 3B+ or later) is recommended. We recommend installing Ubuntu Server LTS, which can be downloaded from the Raspberry Pi Imager Software. This version is more resource-efficient compared to Ubuntu Desktop because it does not bloat the storage with GUI files.
