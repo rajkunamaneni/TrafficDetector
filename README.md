@@ -213,7 +213,9 @@ Access to AWS hosting is also needed. In the future, there is potential to expan
 
 ## 📬 AWS Notifications and Usage
 
-# TO BE DONE
+1 - SNORT on Raspberry Pi constantly looks for any network attacks
+2 - When SNORT detects an attack, it uses AWS SES to send an email notification to the user
+3 - User receives a notification that an attack on their network has been detected. 
 
 ![AWS Diagram](/extras/AWSSnortDiagram.png)
 
