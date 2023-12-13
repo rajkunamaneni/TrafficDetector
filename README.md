@@ -58,8 +58,30 @@ To run Snort in console mode and see the network traffic:
 ```bash
 sudo snort -A console -q -c /etc/snort/snort.conf -i eth0
 ```
+eth0 in this case is the network interface. Replace eth0 with your network interface name. To find your network interface name, run the following command:
 
-Replace eth0 with your network interface name.
+```bash
+ifconfig
+```
+
+ifconfig will display your network interfaces. The network interface name will be displayed next to the word "inet". For example, if your network interface is wlan0, you could run:
+
+```bash
+sudo snort -A console -q -c /etc/snort/snort.conf -i wlan0
+```
+
+This will run Snort in console mode and display the network traffic. The traffic data contains the source and destination IP addresses, the protocol, and the port number.
+
+To run Snort in packet logging mode and save the packets to a file:
+
+```bash
+sudo snort -A console -q -c /etc/snort/snort.conf -i eth0 -l ~/snortlog
+```
+
+The flags -A console -q -c /etc/snort/snort.conf -i eth0 are required to run Snort in packet logging mode. The -l flag specifies the directory to save the packets to. The directory must exist before running Snort. The directory will be created if it does not exist. -A flag specifies the output mode. -q flag specifies quiet mode. -c flag specifies the configuration file. /etc/snort/snort.conf is the default configuration file. -i flag specifies the network interface. eth0 is the default network interface.
+
+This will save the packets to the snortlog directory in your home directory. Make sure to use the correct file path for your system. 
+
 
 ### `Wireshark/Tshark`
 
