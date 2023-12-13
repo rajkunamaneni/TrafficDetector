@@ -235,7 +235,7 @@ Access to AWS hosting is also needed. In the future, there is potential to expan
 - 2.) When the program detects an attack, it uses AWS SES to send an email notification to the user
 - 3.) User receives a notification that an attack on their network has been detected. 
 
-![AWS Diagram](/extras/AWSSnortDiagram.png)
+![AWS Diagram](/extras/newAWS.png)
 
 ## 📝 Current Progress:
 
