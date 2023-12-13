@@ -202,7 +202,7 @@ Fping provides less information thatn ping, but it is faster because it sends mu
     Report any bugs or issues to the respective tool developers.
     Do not use these tools for malicious purposes.
     Expanding the toolkit to include other tools is encouraged.
-    WARNING! When expanding the toolkit, ensure that the tools are compatible with the Raspberry Pi. Some tools may not be compatible with the Raspberry Pi's ARM architecture.
+    WARNING! When expanding the toolkit, ensure that the tools are compatible with the Raspberry Pi 3B+ or newer. Some tools may not be compatible with the Raspberry Pi's ARM architecture.
 
 For detailed usage and advanced configurations, consult the respective man pages or online documentation:
 
