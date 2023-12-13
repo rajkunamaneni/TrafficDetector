@@ -61,7 +61,7 @@ sudo snort -A console -q -c /etc/snort/snort.conf -i eth0
 
 Replace eth0 with your network interface name.
 
-### `Wireshark`
+### `Wireshark/Tshark`
 
 Wireshark is a network protocol analyzer that can capture and display the data traveling back and forth on a network. It is used to troubleshoot network problems, analyze network traffic, and detect network intrusions. In regards to the toolkit's functionality, Wireshark can be used to capture packets and analyze them for suspicious activity. The command line version of Wireshark, Tshark, can be used to capture packets and save them to a file
 
