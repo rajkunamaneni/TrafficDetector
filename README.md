@@ -239,9 +239,9 @@ Access to AWS hosting is also needed. In the future, there is potential to expan
 
 ![AWS Diagram](/extras/newAWS.png)
 
-### Sample Email when Intrusion is Detected 
+### Intrusion Detection Email sent via AWS SES 
 
-- User will get an email about the kind of attack that has been detected. 
+- The user will get an email about the kind of attack that has been detected. 
 - Description of the attack and possible steps to avoid this in the future is also involved. 
 
 ![Email](/extras/sampleEmail.png)
