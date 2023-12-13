@@ -260,7 +260,8 @@ Download AWS CLI Interface
 sudo pip3 install awscli
 ```
 
-Configure AWS 
+
+### Configure AWS 
 
 ```bash
 sudo aws configure
