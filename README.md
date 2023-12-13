@@ -53,21 +53,24 @@ ipvar HOME_NET 192.168.1.0/24
 
 Save and close the file.
 
+For your SNORT to detect attacks, it is really necessary to replace the local.rules files in /etc/snort/rules to the one provided by us. 
+It had rule to detect ping, DDOS Attack, and Port Scan attack. 
+
 To run Snort in console mode and see the network traffic:
 
 ```bash
-sudo snort -A console -q -c /etc/snort/snort.conf -i eth0
+sudo snort -q -l /var/log/snort -i wlan0 -A console -c /etc/snort/snort.conf &
 ```
-eth0 in this case is the network interface. Replace eth0 with your network interface name. To find your network interface name, run the following command:
+wlan0 in this case is the network interface. Replace wlan0 with your network interface name. To find your network interface name, run the following command:
 
 ```bash
 ifconfig
 ```
 
-ifconfig will display your network interfaces. The network interface name will be displayed next to the word "inet". For example, if your network interface is wlan0, you could run:
+ifconfig will display your network interfaces. The network interface name will be displayed next to the word "inet". For example, if your network interface is eth0, you could run:
 
 ```bash
-sudo snort -A console -q -c /etc/snort/snort.conf -i wlan0
+sudo snort -q -l /var/log/snort -i eth0 -A console -c /etc/snort/snort.conf &
 ```
 
 This will run Snort in console mode and display the network traffic. The traffic data contains the source and destination IP addresses, the protocol, and the port number.
@@ -81,6 +84,10 @@ sudo snort -A console -q -c /etc/snort/snort.conf -i eth0 -l ~/snortlog
 The flags -A console -q -c /etc/snort/snort.conf -i eth0 are required to run Snort in packet logging mode. The -l flag specifies the directory to save the packets to. The directory must exist before running Snort. The directory will be created if it does not exist. -A flag specifies the output mode. -q flag specifies quiet mode. -c flag specifies the configuration file. /etc/snort/snort.conf is the default configuration file. -i flag specifies the network interface. eth0 is the default network interface.
 
 This will save the packets to the snortlog directory in your home directory. Make sure to use the correct file path for your system. 
+
+But for the purpose of this project you can just use run the file run_snort_silent.sh, and this will start the SNORT as a background process.
+
+After this you can run the attack simulation files and SNORT will show a log that attack has been indetified. 
 
 
 ### `Wireshark/Tshark`
