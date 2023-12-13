@@ -214,13 +214,15 @@ Storage: An 8 GB SD card should suffice, the bigger the better as the tool grows
 
 Access to AWS hosting is also needed. In the future, there is potential to expand to other well-known hosting platforms (i.e. DigitalOcean, Cloudflare, etc.).
 
-## 📲 AWS Notifications and Usage
+## 📬 AWS Notifications and Usage
 
-# TO BE DONE
+1 - SNORT on Raspberry Pi constantly looks for any network attacks
+2 - When SNORT detects an attack, it uses AWS SES to send an email notification to the user
+3 - User receives a notification that an attack on their network has been detected. 
 
 ![AWS Diagram](/extras/AWSSnortDiagram.png)
 
-## Current Progress:
+## 📝 Current Progress:
 
 Development of Bash Scripts: Created scripts for automating the installation of tools like SNORT and Wireshark.
 
@@ -228,7 +230,7 @@ SNORT Installation and Configuration: Successfully installed and tested SNORT fo
 
 Network Attack Simulations: Conducted simulations like DDOS and Port Scanning to test SNORT's detection capabilities.
 
-## Future Directions:
+## 🚀 Future Directions:
 
 Additional Tools: Looking into integrating other security tools to complement the current library.
 
@@ -242,7 +244,7 @@ Better Hardware Support: Expanding to support other hardware platforms like RISC
 
 Reducing User Effort: Automating the installation process to reduce the amount of manual work required.
 
-## Configurability:
+## 🛠️ Configurability:
 
 As an open source toolkit, the start.sh shell script was designed to be easily configurable. To implement new programs and utilities into the toolkit to optimize security coverage, one needs to only insert lines indicating tools to be installed. This enables simplicity with little overhead in terms of mental effort.
 
