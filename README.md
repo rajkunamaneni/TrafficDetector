@@ -12,6 +12,14 @@ Eavesdropping attacks can vary in form, including snooping and man-in-the-middle
 ### Problem with Anti-Virus Software and Our Solution:
 Anti-virus software, though effective against viruses, can significantly slow down system performance when running network scans. Our solution involves shifting this workload to a dedicated network machine, like a Raspberry Pi, acting as a DNS server to monitor network traffic and alert users of any unauthorized data transfers.
 
+### Design Philosophy and User Accessibility:
+
+The design of this network toolkit is founded on simplicity and user accessibility. We understand that not everyone has the technical expertise to use complex security tools. We are developing a simple interface that allows users to easily set up and monitor their network. This approach makes sure that all users can actively participate in safeguarding their digital environment.
+
+### Education and Support:
+
+We understand the importance of teaching users about network security. Our repository has detailed documentation and tutorials to help users understand the basics of network security and how to effectively use this toolkit. We will also provide support for users who have questions or need help with the toolkit.
+
 ## :wrench: Installation
 ### 1) Clone the Repository:
 
