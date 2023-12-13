@@ -231,9 +231,10 @@ Access to AWS hosting is also needed. In the future, there is potential to expan
 
 ## 📬 AWS Notifications and Usage
 
-- 1.) Detection Programs on Raspberry Pi constantly look for any network attacks
-- 2.) When the program detects an attack, it uses AWS SES to send an email notification to the user
-- 3.) User receives a notification that an attack on their network has been detected. 
+- 1.) Attack is performed using attack simulation files
+- 2.) Detection Programs on Raspberry Pi constantly look for any network attacks
+- 3.) When the program detects an attack, it uses AWS SES to send an email notification to the user
+- 4.) User receives a notification that an attack on their network has been detected. 
 
 ![AWS Diagram](/extras/newAWS.png)
 
