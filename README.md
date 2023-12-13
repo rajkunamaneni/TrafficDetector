@@ -234,6 +234,42 @@ Access to AWS hosting is also needed. In the future, there is potential to expan
 
 ## 📬 AWS Notifications and Usage
 
+For AWS system to work, first we have to download AWS CLI (you can skip these steps if you ran start.sh). 
+
+Also before this you have to setup AWS SES in AWS Management console. 
+
+You can find more information about this at 
+
+[AWS SES](https://aws.amazon.com/ses/)
+
+First check if you have pip is installed. 
+
+```bash
+sudo apt install python3-pip 
+```
+
+Download boto3 which is a AWS SDK used to send mails.
+
+```bash
+sudo pip install boto3 
+```
+
+Download AWS CLI Interface
+
+```bash
+sudo pip3 install awscli
+```
+
+Configure AWS 
+
+```bash
+sudo aws configure
+```
+
+This asks for the few information about your AWS Account. 
+
+After successful setup of AWS, you can run the cli_read_test.py in another terminal.
+
 - 1.) Attack is performed using attack simulation files
 - 2.) Detection Programs on Raspberry Pi constantly look for any network attacks
 - 3.) When the program detects an attack, it uses AWS SES to send an email notification to the user
