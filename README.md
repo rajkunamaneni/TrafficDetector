@@ -242,6 +242,8 @@ You can find more information about this at
 
 [AWS SES](https://aws.amazon.com/ses/)
 
+AWS should already be installed if you have run the `start.sh` script. If not, you can install it manually using the following command:
+
 First check if you have pip is installed. 
 
 ```bash
