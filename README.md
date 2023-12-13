@@ -182,7 +182,7 @@ Fping provides less information thatn ping, but it is faster because it sends mu
 
 ## 📌 Note:
 
-    Ensure you have the necessary permissions and are compliant with legal regulations when using these tools.
+    Ensure you have the necessary permissions when using these tools.
     Regularly update the tools to get the latest security features and bug fixes.
     Report any bugs or issues to the respective tool developers.
     Do not use these tools for malicious purposes.
